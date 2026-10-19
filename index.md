@@ -89,7 +89,7 @@ I am available for senior technical writing, documentation strategy, information
 
 **[Contact Me](contact.md)**  •  **[Download CV](Gerard%20Gallen%20CV%202026.docx)**
 
-&lt;style&gt;
+<style>
   .hero-section {
     margin-bottom: 2rem;
     background: linear-gradient(135deg, rgba(18, 56, 94, 0.04), rgba(33, 150, 243, 0.06));
@@ -97,14 +97,16 @@ I am available for senior technical writing, documentation strategy, information
     border-radius: 12px;
     padding: 2rem;
   }
-<br>
+
+
   .profile-card {
     display: grid;
     grid-template-columns: 220px 1fr;
     gap: 2rem;
     align-items: center;
   }
-<br>
+
+
   .profile-image-container {
     width: 220px;
     height: 220px;
@@ -114,7 +116,8 @@ I am available for senior technical writing, documentation strategy, information
     background: linear-gradient(135deg, #eef4fb, #dfeaf7);
     box-shadow: 0 18px 40px rgba(33, 150, 243, 0.12);
   }
-<br>
+
+
   .profile-photo {
     width: 100%;
     height: 100%;
@@ -122,11 +125,13 @@ I am available for senior technical writing, documentation strategy, information
     display: block;
     filter: grayscale(100%) contrast(1.08) brightness(0.96) saturate(0.7);
   }
-<br>
+
+
   .profile-content {
     min-width: 0;
   }
-<br>
+
+
   .eyebrow {
     margin: 0 0 0.5rem 0;
     font-size: 0.76rem;
@@ -135,21 +140,24 @@ I am available for senior technical writing, documentation strategy, information
     text-transform: uppercase;
     color: #1d5f93;
   }
-<br>
+
+
   .profile-title {
     margin: 0;
     font-size: clamp(2rem, 4vw, 2.8rem);
     line-height: 1.1;
     color: #1a1a1a;
   }
-<br>
+
+
   .profile-subtitle {
     margin: 0.4rem 0 0.9rem 0;
     font-size: 1.2rem;
     font-weight: 600;
     color: #1a5d98;
   }
-<br>
+
+
   .profile-summary {
     margin: 0 0 1.3rem 0;
     font-size: 1rem;
@@ -157,13 +165,15 @@ I am available for senior technical writing, documentation strategy, information
     color: #3f3f3f;
     max-width: 60ch;
   }
-<br>
+
+
   .cta-group {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
   }
-<br>
+
+
   .btn {
     display: inline-block;
     padding: 0.7rem 1.2rem;
@@ -174,93 +184,100 @@ I am available for senior technical writing, documentation strategy, information
     text-decoration: none;
     border: 2px solid transparent;
   }
-<br>
+
+
   .btn-primary {
     background: #1d5f93;
     color: white;
   }
-<br>
+
+
   .btn-primary:hover {
     background: #164d7d;
     text-decoration: none;
   }
-<br>
+
+
   .btn-secondary {
     background: white;
     color: #1d5f93;
     border-color: #1d5f93;
   }
-<br>
+
+
   .btn-secondary:hover {
     background: #f4f9ff;
     text-decoration: none;
   }
-<br>
+
+
   .btn-tertiary {
     background: transparent;
     color: #1d5f93;
     border-color: #1d5f93;
   }
-<br>
+
+
   .btn-tertiary:hover {
     background: rgba(29, 95, 147, 0.06);
     text-decoration: none;
   }
-<br>
+
+
   .expertise-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1rem;
     margin: 1.5rem 0 2rem 0;
   }
-<br>
+
+
   .expertise-card {
-    min-width: 0;
     background: #f8fafc;
     border: 1px solid #e5edf5;
     border-radius: 8px;
     padding: 1.2rem 1rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-sizing: border-box;
   }
-<br>
+
+
   .expertise-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 22px rgba(0,0,0,0.04);
   }
-<br>
+
+
   .expertise-card h3 {
     margin: 0 0 0.6rem 0;
     color: #1d5f93;
     font-size: 1.05rem;
   }
-<br>
+
+
   .expertise-card p {
     margin: 0;
     line-height: 1.6;
     color: #4a4a4a;
-    overflow-wrap: break-word;
   }
-<br>
+
+
   @media (max-width: 768px) {
     .profile-card {
       grid-template-columns: 1fr;
       gap: 1.2rem;
       text-align: center;
     }
-<br>
+
+
     .profile-image-container {
       width: 180px;
       height: 180px;
       margin: 0 auto;
     }
-<br>
+
+
     .cta-group {
       justify-content: center;
     }
-<br>
-    .expertise-grid {
-      grid-template-columns: 1fr;
-    }
   }
-&lt;/style&gt;
+</style>
