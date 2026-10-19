@@ -98,14 +98,12 @@ I am available for senior technical writing, documentation strategy, information
     padding: 2rem;
   }
 
-
   .profile-card {
     display: grid;
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 220px minmax(0, 1fr);
     gap: 2rem;
     align-items: center;
   }
-
 
   .profile-image-container {
     width: 220px;
@@ -115,8 +113,8 @@ I am available for senior technical writing, documentation strategy, information
     border: 3px solid rgba(33, 150, 243, 0.8);
     background: linear-gradient(135deg, #eef4fb, #dfeaf7);
     box-shadow: 0 18px 40px rgba(33, 150, 243, 0.12);
+    box-sizing: border-box;
   }
-
 
   .profile-photo {
     width: 100%;
@@ -126,11 +124,9 @@ I am available for senior technical writing, documentation strategy, information
     filter: grayscale(100%) contrast(1.08) brightness(0.96) saturate(0.7);
   }
 
-
   .profile-content {
     min-width: 0;
   }
-
 
   .eyebrow {
     margin: 0 0 0.5rem 0;
@@ -141,14 +137,12 @@ I am available for senior technical writing, documentation strategy, information
     color: #1d5f93;
   }
 
-
   .profile-title {
     margin: 0;
     font-size: clamp(2rem, 4vw, 2.8rem);
     line-height: 1.1;
     color: #1a1a1a;
   }
-
 
   .profile-subtitle {
     margin: 0.4rem 0 0.9rem 0;
@@ -157,46 +151,40 @@ I am available for senior technical writing, documentation strategy, information
     color: #1a5d98;
   }
 
-
   .profile-summary {
     margin: 0 0 1.3rem 0;
+    max-width: 60ch;
     font-size: 1rem;
     line-height: 1.7;
     color: #3f3f3f;
-    max-width: 60ch;
   }
-
 
   .cta-group {
     display: flex;
-    gap: 0.75rem;
     flex-wrap: wrap;
+    gap: 0.75rem;
   }
-
 
   .btn {
     display: inline-block;
     padding: 0.7rem 1.2rem;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: all 0.2s ease;
-    text-decoration: none;
     border: 2px solid transparent;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
   }
-
 
   .btn-primary {
     background: #1d5f93;
     color: white;
   }
 
-
   .btn-primary:hover {
     background: #164d7d;
     text-decoration: none;
   }
-
 
   .btn-secondary {
     background: white;
@@ -204,12 +192,10 @@ I am available for senior technical writing, documentation strategy, information
     border-color: #1d5f93;
   }
 
-
   .btn-secondary:hover {
     background: #f4f9ff;
     text-decoration: none;
   }
-
 
   .btn-tertiary {
     background: transparent;
@@ -217,57 +203,58 @@ I am available for senior technical writing, documentation strategy, information
     border-color: #1d5f93;
   }
 
-
   .btn-tertiary:hover {
     background: rgba(29, 95, 147, 0.06);
     text-decoration: none;
   }
 
-
   .expertise-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
-    margin: 1.5rem 0 2rem 0;
+    width: 100%;
+    margin: 1.5rem 0 2rem;
   }
 
-
   .expertise-card {
+    min-width: 0;
+    padding: 1.2rem 1rem;
     background: #f8fafc;
     border: 1px solid #e5edf5;
     border-radius: 8px;
-    padding: 1.2rem 1rem;
+    box-sizing: border-box;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-
   .expertise-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 22px rgba(0,0,0,0.04);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.04);
   }
-
 
   .expertise-card h3 {
-    margin: 0 0 0.6rem 0;
+    margin: 0 0 0.6rem;
     color: #1d5f93;
     font-size: 1.05rem;
+    overflow-wrap: anywhere;
   }
-
 
   .expertise-card p {
     margin: 0;
     line-height: 1.6;
     color: #4a4a4a;
+    overflow-wrap: anywhere;
   }
 
-
   @media (max-width: 768px) {
+    .hero-section {
+      padding: 1.25rem;
+    }
+
     .profile-card {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 1.2rem;
       text-align: center;
     }
-
 
     .profile-image-container {
       width: 180px;
@@ -275,9 +262,12 @@ I am available for senior technical writing, documentation strategy, information
       margin: 0 auto;
     }
 
-
     .cta-group {
       justify-content: center;
+    }
+
+    .expertise-grid {
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 </style>
