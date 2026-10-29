@@ -4,7 +4,7 @@ author: Gerard Gallen
 remote_theme: just-the-docs/just-the-docs
 
 url: "https://gerryg2583.github.io"
-baseurl: "/gerardgallen.github.io"
+baseurl: ""
 
 search_enabled: true
 color_scheme: light
